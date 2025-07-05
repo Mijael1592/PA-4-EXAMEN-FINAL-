@@ -1,0 +1,74 @@
+<!-- postula.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Postula</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Ciencias Sociales</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="Plandeestudios.html">Plan de estudios</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="postula.html">Postula</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="mb-4 text-center">📩 Formulario de Postulación</h1>
+
+    <form id="formulario" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">👤 Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez" required aria-describedby="errorNombre">
+        <div id="errorNombre" class="invalid-feedback">
+          Por favor, ingresa tu nombre completo.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="correo" class="form-label">📧 Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" placeholder="Ej. ejemplo@correo.com" required aria-describedby="errorCorreo">
+        <div id="errorCorreo" class="invalid-feedback">
+          Ingresa un correo válido.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">✍️ Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" placeholder="¿Por qué te interesa postular?" required aria-describedby="errorMensaje"></textarea>
+        <div id="errorMensaje" class="invalid-feedback">
+          Escribe un mensaje para continuar.
+        </div>
+      </div>
+
+      <div id="form-feedback"></div>
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">📨 Enviar postulación</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 Facultad de Ciencias Sociales. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scrip.js"></script>
+</body>
+</html>
+
